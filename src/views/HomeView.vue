@@ -6,7 +6,7 @@ import SquareNoAnimation from '../components/SquareNoAnimation.vue'
   <main>
     <div class="container">
       <SquareNoAnimation
-        v-for="n in 400"
+        v-for="n in 600"
         :key="n"
         class="square"
         :style="{
@@ -16,9 +16,9 @@ import SquareNoAnimation from '../components/SquareNoAnimation.vue'
 
           // transform: `scale(${2 - n * 0.003}) rotate(${n * 900}deg) translate(${n * 2}px, ${n * 2}px)`,
           // transform: `scale(${3 - n * 0.0055}) rotate(${n * 2040}deg) translate(${n * 2}px, ${n * 2}px)`,
-          transform: `scale(${1 - n * -0.022}) rotate(${n * -1280909}deg) translate(${n * .05}px, ${n * .4}px)`,
+          transform: `scale(${1 - n * -0.022}) rotate(${n * -1280909}deg) translate(${n * 0.05}px, ${n * 0.4}px)`,
 
-          // zIndex: 305 
+          // zIndex: 305
 
           zIndex: 305 - n
         }"
@@ -33,8 +33,7 @@ import SquareNoAnimation from '../components/SquareNoAnimation.vue'
   top: 50%;
   left: 50%;
   transform-origin: center;
-  padding: 
-25px;
+  padding: 25px;
   box-shadow:
     0 4px 6px rgba(185, 182, 182, 0.233),
     0 8px 16px rgba(0, 0, 0, 0.15),
